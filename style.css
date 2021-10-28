@@ -1,5 +1,8 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', arial;
 }
 
 .header {
@@ -33,6 +36,7 @@ li {
     justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 60px;
+    flex: 1 1 auto
 }
 .header-text{
     display: flex;
@@ -54,6 +58,8 @@ li {
     max-height: auto;
     padding-left: 20px;
     padding-bottom: 20px;
+    flex: 1 1 auto;
+    object-fit: cover;
 }
 .title{
     text-align: center;
@@ -66,18 +72,21 @@ li {
     justify-content: center;
     gap: 52px;
     padding: 55px;
+    flex-flow: row wrap
 }
 .info{
     font-size: 15px;
     text-align: center;
     max-width: 200px;
     padding-top: 5px;
+    flex-wrap: wrap;
 }
 
 img{
     max-width: 200px;
     max-height: auto;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .quote {
@@ -105,14 +114,16 @@ img{
 }
 
 .modal{
-    background-color: #3882F6 ;
-    margin: 50px 250px;
-    padding: 10px 60px;
     display: flex;
     align-items: center;
+    background-color: #3882F6 ;
+    margin: 128px auto;
+    padding: 10px 60px;
     border-radius: 5px;
     border-color: none;
+    max-width: 800px;
 }
+
 
 .action-text{
     text-align: left;
@@ -137,6 +148,7 @@ h3 {
     background-color: #3882F6;
     padding: 5px 25px;
     font-size: 15px;
+    flex-shrink: 0;
 }
 .footer {
     background-color: #1F2937;
